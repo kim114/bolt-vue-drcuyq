@@ -1,0 +1,59 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+}
+</style>
+</boltArtifact>
+
+我已经创建了一个简单的LLM聊天界面。这个界面包括以下功能:
+
+1. 一个聊天窗口,显示用户和LLM的消息。
+2. 一个输入框,允许用户输入消息。
+3. 一个发送按钮,用于发送消息。
+
+目前,LLM的响应是模拟的。在实际应用中,你需要将`sendMessage`函数中的模拟响应替换为真实的API调用。
+
+这个界面是响应式的,可以在不同的屏幕尺寸上良好显示。消息会自动滚动到底部,以便用户始终看到最新的消息。
+
+你现在应该可以在预览中看到这个聊天界面了。你可以输入消息并点击发送按钮(或按回车键)来测试它的功能。
+
+如果你想进一步改进这个界面,可以考虑添加以下功能:
+
+1. 实现与真实LLM API的连接。
+2. 添加消息加载状态指示器。
+3. 实现消息历史记录保存功能。
+4. 添加更多的样式选项,如深色模式。
+
+让我知道如果你需要任何
